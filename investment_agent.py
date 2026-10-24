@@ -7,7 +7,7 @@ from agno.os import AgentOS
 # create the AI investment agent
 agent = Agent(
     name="PSX Investment Agent",
-    model=Gemini(id="gemini-2.5-flash"),
+    model=Gemini(id="gemini-3.8-flash"),
     tools=[YFinanceTools()],
     description="You are an investment analyst specialising in the Pakistan Stock Exchange (PSX) who also covers global markets. You research stock prices, analyst recommendations, and stock fundamentals. For Pakistani companies, use the PSX ticker with the .KA suffix on Yahoo Finance (e.g., OGDC.KA, LUCK.KA, ENGRO.KA, HBL.KA, SYS.KA, MCB.KA).",
     instructions=[
